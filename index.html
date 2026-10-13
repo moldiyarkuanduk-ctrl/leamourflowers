@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b43">
+  <meta name="description" content="LeAmourFlowers — авторские букеты, цветочные композиции и доставка цветов.">
+  <title>LeAmourFlowers — цветы, которые говорят за вас</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Цветы с чувством. Доставка по городу · Ежедневно с 09:00 до 21:00</div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="LeAmourFlowers — на главную">
+      <span class="brand-mark">L<span>✳</span></span>
+      <span class="brand-name">LeAmour<span>Flowers</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#catalog">Каталог</a><a href="#story">О нас</a><a href="#services">Услуги</a><a href="#reviews">Отзывы</a>
+    </nav>
+    <div class="header-actions">
+      <a class="phone-link" href="tel:+77000000000">+7 (777) 275-13-07</a>
+      <button class="cart-button" id="openCart" aria-label="Открыть корзину">Корзина <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> FLOWERS WITH FEELING</p>
+        <h1>Пусть цветы<br>скажут <em>больше.</em></h1>
+        <p class="hero-text">Авторские букеты для важных моментов, тихих признаний и красивых поводов без повода.</p>
+        <div class="hero-actions"><a class="button button-pink" href="#catalog">Выбрать букет <span>↗</span></a><a class="text-link" href="#story">Наша философия <span>→</span></a></div>
+        <div class="hero-note"><div class="avatar-stack"><i>✿</i><i>❀</i><i>✽</i></div><p><strong>Каждый букет — уникален</strong><br><small>Собираем вручную с заботой о деталях</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Розовые и кремовые цветы в дизайнерской упаковке"></div>
+        <div class="image-tag"><span>✦</span><div><strong>Made with love</strong><small>Особенное — в деталях</small></div></div>
+        <div class="vertical-caption">LEAMOUR FLOWER STUDIO · EST. 2024</div>
+      </div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="petals" id="petals"></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✳</span><p><strong>Свежие цветы</strong><small>Поставки несколько раз в неделю</small></p></div>
+      <div><span>♡</span><p><strong>Авторская сборка</strong><small>Каждая композиция — вручную</small></p></div>
+      <div><span>↗</span><p><strong>Бережная доставка</strong><small>Красиво до самой двери</small></p></div>
+      <div><span>✧</span><p><strong>Открытка в подарок</strong><small>Добавьте свои слова</small></p></div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">НАШИ КОМПОЗИЦИИ</p><h2>Букеты с <em>характером</em></h2></div>
+        <a class="text-link desktop-link" href="#order">Нужен особенный букет? <span>→</span></a>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">Все букеты</button>
+          <button class="filter" data-filter="romantic">Романтика</button>
+          <button class="filter" data-filter="roses">Розы</button>
+          <button class="filter" data-filter="premium">Премиум</button>
+          <button class="filter" data-filter="minimal">Лаконичные</button>
+        </div>
+        <label class="sort-wrap"><span>Сортировка</span><select id="sortSelect"><option value="featured">По популярности</option><option value="low">Сначала дешевле</option><option value="high">Сначала дороже</option></select></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="catalog-bottom"><p>Не нашли то, что искали? Создадим букет по вашему настроению.</p><a class="button button-outline" href="#order">Заказать индивидуальный букет <span>↗</span></a></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><div class="story-image-inner"></div><div class="story-stamp">FLOWERS<br>FOR YOUR<br>STORY <span>✿</span></div></div>
+      <div class="story-copy"><p class="eyebrow">НЕМНОГО О НАС</p><h2>Мы верим, что<br>красота — это <em>чувство.</em></h2><p>LeAmourFlowers — цветочная студия для тех, кто любит выражать чувства красиво. Мы соединяем сезонные цветы, необычные фактуры и современную флористику, чтобы каждый букет был не просто подарком, а личной историей.</p><p>Никаких случайных деталей: от выбора каждого стебля до ленты и открытки — всё имеет значение.</p><a class="button button-dark" href="#order">Расскажите о вашем поводе <span>↗</span></a><div class="signature">with love, <span>LeAmour</span></div></div>
+    </section>
+
+    <section class="occasion-section section" id="services">
+      <div class="section-heading"><div><p class="eyebrow">ЦВЕТЫ ДЛЯ КАЖДОГО ПОВОДА</p><h2>Какое у вас <em>чувство?</em></h2></div><p class="heading-description">Подберём цветы под событие, человека и настроение.</p></div>
+      <div class="occasion-grid">
+        <a href="#catalog" class="occasion-card occasion-birthday"><span class="occasion-number">01 / ПРАЗДНИК</span><div><h3>С днём рождения</h3><span>Больше поводов улыбаться ↗</span></div></a>
+        <a href="#catalog" class="occasion-card occasion-love"><span class="occasion-number">02 / ЛЮБОВЬ</span><div><h3>Просто люблю</h3><span>Когда слова не нужны ↗</span></div></a>
+        <a href="#catalog" class="occasion-card occasion-thanks"><span class="occasion-number">03 / ЗАБОТА</span><div><h3>С теплом и благодарностью</h3><span>Маленький жест, большое чувство ↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="testimonial-section" id="reviews">
+  <div class="testimonial-top">
+    <p class="eyebrow">ВАШИ СЛОВА</p>
+    <span id="ratingDisplay">★★★★★</span>
+  </div>
+
+  <!-- Слайдер отзывов -->
+  <div class="review-slider" id="reviewSlider">
+    <!-- Отзывы рендерятся через JS -->
+  </div>
+
+  <!-- Стрелки навигации -->
+  <button class="review-arrow review-arrow-prev" id="reviewPrev" aria-label="Предыдущий отзыв">‹</button>
+  <button class="review-arrow review-arrow-next" id="reviewNext" aria-label="Следующий отзыв">›</button>
+
+  <!-- Точки-индикаторы -->
+  <div class="review-dots" id="reviewDots"></div>
+
+  <!-- Кнопка открытия формы -->
+  <button class="review-open-btn" id="reviewOpenBtn">
+    💬 Оставить свой отзыв
+  </button>
+
+  <!-- Форма отзыва (скрыта по умолчанию) -->
+  <div class="review-form-wrap" id="reviewFormWrap">
+    <h3>Поделитесь впечатлением</h3>
+    <form class="review-form" id="reviewForm">
+      <label>
+        Ваше имя
+        <input type="text" name="reviewName" placeholder="Например: Алина М." required maxlength="40">
+      </label>
+
+      <div class="review-stars-input">
+        <span>Оценка:</span>
+        <div class="stars" id="starsInput">
+          <button type="button" data-star="1">★</button>
+          <button type="button" data-star="2">★</button>
+          <button type="button" data-star="3">★</button>
+          <button type="button" data-star="4">★</button>
+          <button type="button" data-star="5">★</button>
+        </div>
+        <input type="hidden" name="reviewStars" id="reviewStarsValue" value="5">
+      </div>
+
+      <label>
+        Ваш отзыв
+        <textarea name="reviewText" rows="4" placeholder="Расскажите о букете, доставке, эмоциях…" required maxlength="300"></textarea>
+      </label>
+
+      <div class="review-form-actions">
+        <button type="submit" class="button button-pink">Отправить отзыв <span>↗</span></button>
+        <button type="button" class="review-cancel" id="reviewCancelBtn">Отмена</button>
+      </div>
+    </form>
+  </div>
+</section>
+      
+
+    <section class="order-section" id="order">
+      <div class="order-copy"><p class="eyebrow">ВАШ ИДЕАЛЬНЫЙ БУКЕТ</p><h2>У вас есть идея.<br>У нас — <em>цветы.</em></h2><p>Опишите повод, любимые оттенки или просто настроение. Флорист свяжется с вами и поможет создать композицию.</p><div class="order-contact"><span>✿</span><div><strong>Личный подход к каждому заказу</strong><small>Ответим и уточним детали перед сборкой</small></div></div></div>
+      <form class="order-form" id="orderForm">
+        <div class="form-title"><h3>Расскажите нам</h3><span>01 — 04</span></div>
+        <label>Ваше имя<input name="name" placeholder="Как к вам обращаться?" required></label>
+        <label>Номер телефона<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required></label>
+        <div class="form-row"><label>Бюджет<select name="budget"><option>До 15 000 ₸</option><option>15 000–25 000 ₸</option><option>25 000–40 000 ₸</option><option>От 40 000 ₸</option></select></label><label>Повод<select name="occasion"><option>Без повода</option><option>День рождения</option><option>Свидание / признание</option><option>Поздравление</option><option>Другое</option></select></label></div>
+        <label>Пожелания<textarea name="details" rows="3" placeholder="Любимые цветы, цвета, дата доставки..."></textarea></label>
+        <!-- КАЛЕНДАРЬ ДОСТАВКИ -->
+<div class="form-block">
+  <label class="block-label">Дата и время доставки</label>
+  <div class="booking-calendar" id="bookingCalendar">
+    <div class="cal-header">
+      <button type="button" class="cal-nav" data-cal="-1" aria-label="Предыдущий месяц">‹</button>
+      <strong id="calTitle"></strong>
+      <button type="button" class="cal-nav" data-cal="1" aria-label="Следующий месяц">›</button>
+    </div>
+    <div class="cal-weekdays">
+      <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+  <div class="time-slots" id="timeSlots">
+    <button type="button" class="slot" data-time="10:00">10:00</button>
+    <button type="button" class="slot" data-time="12:00">12:00</button>
+    <button type="button" class="slot" data-time="14:00">14:00</button>
+    <button type="button" class="slot" data-time="16:00">16:00</button>
+    <button type="button" class="slot" data-time="18:00">18:00</button>
+    <button type="button" class="slot" data-time="20:00">20:00</button>
+  </div>
+  <input type="hidden" name="deliveryDate" id="deliveryDate">
+  <input type="hidden" name="deliveryTime" id="deliveryTime">
+</div>
+        <button class="button button-pink form-submit" type="submit">Отправить заявку <span>↗</span></button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных для связи по заказу.</p><p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main"><a class="brand brand-footer" href="#home"><span class="brand-mark">L<span>✳</span></span><span class="brand-name">LeAmour<span>Flowers</span></span></a><p>Цветы, которые говорят за вас.<br>Создано с чувством в Казахстане.</p><div class="footer-social"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="WhatsApp">wa</a><a href="#" aria-label="TikTok">tk</a></div></div>
+    <div class="footer-col"><strong>Навигация</strong><a href="#catalog">Каталог</a><a href="#story">О студии</a><a href="#services">Поводы</a><a href="#reviews">Отзывы</a></div>
+    <div class="footer-col"><strong>Помощь</strong><a href="#order">Индивидуальный заказ</a><a href="#order">Доставка и оплата</a><a href="#order">Связаться с нами</a></div>
+    <div class="footer-col footer-contact"><strong>Будем на связи</strong><a href="tel:+77772751307 ">+7 (777) 275-13-07</a><span>Ежедневно · 09:00–21:00</span><span>Instagram: @leamourflowers</span></div>
+    <div class="footer-bottom"><span>© 2026 LeAmourFlowers. Все права защищены.</span><span>Сделано с <b>♥</b> и вниманием к деталям</span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">ВАШ ВЫБОР</p><h3>Корзина <span id="drawerCount">(0)</span></h3></div><button id="closeCart" class="close-button" aria-label="Закрыть корзину">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>✿</span><h4>Пока здесь пусто</h4><p>Добавьте букет, который вам понравился.</p></div></div>
+    <div class="cart-footer"><div class="cart-total"><span>Итого</span><strong id="cartTotal">0 ₸</strong></div><button class="button button-pink checkout-button" id="checkoutBtn">Оформить заказ <span>↗</span></button><small>Доставка и детали подтверждаются менеджером.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
