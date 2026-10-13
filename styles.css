@@ -6,7 +6,7 @@
   margin-left: auto;
   background-image:
     linear-gradient(0deg, rgba(16,27,67,.08), transparent 45%),
-    url('images/bouquet.jpeg');
+    url('bouquet.jpeg');
   background-size: cover, cover;
   background-position: center 30%;   /* ← ключевое: сдвиг фокуса вверх */
   background-repeat: no-repeat;
